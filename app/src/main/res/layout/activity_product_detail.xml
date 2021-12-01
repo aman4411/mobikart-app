@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetail">
+    <!--    Product Image-->
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="30dp">
+    </ImageView>
+    <!--    Product Name-->
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <!--    Product Price-->
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:text="Product Price"
+        android:textStyle="italic"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <!--    Product Description-->
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        android:text="Product Description"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+    </TextView>
+    <!--    Back Button-->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp">
+    </Button>
+</RelativeLayout>
